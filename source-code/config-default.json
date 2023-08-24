@@ -15,7 +15,7 @@
         "language": "en_US",
         "defaultOwner": "www-data",
         "defaultGroup": "www-data",
-        "siteUrl": "http://localhost/espocrm-vietnamese-translation/source-code/site",
+        "siteUrl": "http://localhost/espocrm-enum-extend-view/source-code/site",
         "adminUsername": "admin",
         "adminPassword": "1"
     }
