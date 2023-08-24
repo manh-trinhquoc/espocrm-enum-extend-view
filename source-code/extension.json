@@ -1,0 +1,13 @@
+{
+    "module": "EnumExtendView",
+    "name": "Enum Extend View",
+    "description": "Extend view for enum type: dropdown, radio, kanban",
+    "author": "manhtq",
+    "bundled": false,
+    "acceptableVersions": [
+        ">=7.3.0"
+    ],
+    "php": [
+        ">=7.2"
+    ]
+}

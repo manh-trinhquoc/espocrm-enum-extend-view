@@ -1,0 +1,43 @@
+{
+  "id" : 1,
+  "name" : "Vietnamese Translation",
+  "description" : "Description",
+  "lastModifiedDate" : "2023-08-23T02:04:05Z",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJWaWV0bmFtZXNlIFRyYW5zbGF0aW9uIiB7CiAgICAhYWRycyBkZWNpc2lvbnMKICAgICFkb2NzIGRvY3VtZW50cwogICAgbW9kZWwgewogICAgICAgIAogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICAKCiAgICAgICAgdGhlbWUgZGVmYXVsdAoKICAgICAgICAvLyB0aGVtZXMgaHR0cHM6Ly9zdGF0aWMuc3RydWN0dXJpenIuY29tL3RoZW1lcy9taWNyb3NvZnQtYXp1cmUtMjAyMS4wMS4yNi90aGVtZS5qc29uCiAgICB9Cgp9Cg=="
+  },
+  "configuration" : { },
+  "model" : { },
+  "documentation" : {
+    "sections" : [ {
+      "content" : "# Overview\n\n- Dịch EspoCrm sang tiếng Việt\n- Bao gồm core và 1 số extension phổ biến",
+      "format" : "Markdown",
+      "filename" : "001 overview.md",
+      "order" : 1,
+      "title" : ""
+    } ],
+    "decisions" : [ {
+      "content" : "# 0. File template\n\nDate: 2023-08-01\n\n## Status\n\nAccepted\n\n## Context\n\n- Bản template để note chung về frame work và để người dùng clone file\n\n## Decision\n- Khi trỏ đến node khác ta dùng cú pháp  title [text](link). Title sẽ bị đè bởi status chuẩn như Accepted, Proposed\n- [Xem các ví dụ khác](https://github.com/npryce/adr-tools/tree/master/tests)\n- We will use Architecture Decision Records, as described by Michael Nygard in [this article](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)\n\n## Consequences\n",
+      "format" : "Markdown",
+      "id" : "0",
+      "title" : "File template",
+      "date" : "2023-08-01T00:00:00Z",
+      "status" : "Accepted"
+    }, {
+      "content" : "# . version 0. 0. 1\n\nDate: 2023-07-23\n\n## Status\n\nAccepted\n\n## Release Note\n- Dịch cho các version sau:\n\n| name | version\n| - | -\n| Espo | 7.5.5\n| Advanced Pack | 2.15.5\n| Google Integration | 1.5.5\n| Sales Pack | 1.2.1\n",
+      "format" : "Markdown",
+      "id" : "1",
+      "title" : "version 0. 0. 1",
+      "date" : "2023-07-23T00:00:00Z",
+      "status" : "Accepted"
+    } ]
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "styles" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ],
+      "terminology" : { }
+    }
+  }
+}
