@@ -3,11 +3,8 @@ define('enum-extend-view:views/fields/enum-extend-view', ['views/fields/enum', '
 
         type: 'enum-extend-view',
 
-        // listTemplate: 'enum-extend-view:fields/enum-extend-view/list',
-        // listLinkTemplate: 'enum-extend-view:fields/enum-extend-view/list-link',
-        // detailTemplate: 'enum-extend-view:fields/enum-extend-view/detail',
+        detailTemplate: 'enum-extend-view:fields/enum-extend-view/detail',
         editTemplate: 'enum-extend-view:fields/enum-extend-view/edit',
-        // searchTemplate: 'enum-extend-view:fields/enum-extend-view/search',
 
         viewOption: null,
 
