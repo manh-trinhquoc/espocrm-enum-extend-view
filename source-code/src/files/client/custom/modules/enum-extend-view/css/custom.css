@@ -1,0 +1,67 @@
+.enum-kanban {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.enum-kanban .triangle-right {
+  --background-color: var(--text-muted-color);
+  background-color: var(--background-color);
+  position: relative;
+  height: 32px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.enum-kanban .triangle-right.label-success {
+  --background-color: var(--state-success-text);
+}
+.enum-kanban .triangle-right.label-danger {
+  --background-color: var(--state-danger-text);
+}
+.enum-kanban .triangle-right.label-warning {
+  --background-color: var(--state-warning-text);
+}
+.enum-kanban .triangle-right.label-info {
+  --background-color: var(--state-info-text);
+}
+.enum-kanban .triangle-right.label-primary {
+  --background-color: var(--state-primary-text);
+}
+.enum-kanban .triangle-right input {
+  margin: 0;
+  margin-right: 4px;
+}
+.enum-kanban .triangle-right label {
+  margin: 0;
+}
+.enum-kanban .triangle-right span {
+  color: white;
+}
+.enum-kanban .triangle-right::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 16px solid var(--background-color);
+  border-bottom: 16px solid transparent;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+.enum-kanban .triangle-right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 16px solid var(--background-color);
+  border-left: 16px solid transparent;
+  border-bottom: 16px solid var(--background-color);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+}

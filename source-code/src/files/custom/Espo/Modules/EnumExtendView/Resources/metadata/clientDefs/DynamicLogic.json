@@ -1,0 +1,9 @@
+{
+    "fieldTypes": {
+
+        "enum-extend-view": {
+            "view": "views/admin/dynamic-logic/conditions/field-types/enum",
+            "typeList": ["equals", "notEquals", "isEmpty", "isNotEmpty", "in", "notIn"]
+        }
+    }
+}
