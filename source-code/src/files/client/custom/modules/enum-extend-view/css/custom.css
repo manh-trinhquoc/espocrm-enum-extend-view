@@ -1,3 +1,7 @@
+.enum-kanban {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .enum-kanban .triangle-right {
   --background-color: var(--text-muted-color);
   background-color: var(--background-color);

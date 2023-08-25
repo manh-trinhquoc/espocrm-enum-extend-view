@@ -13,14 +13,13 @@ define('enum-extend-view:views/fields/enum-extend-view', ['views/fields/enum', '
 
         setup: function () {
             Dep.prototype.setup.call(this);
-            console.log('setup')
-            console.log(this.params)
-            this.viewOption = this.params.viewOption;
+            this.viewOption = this.params.viewOption ? this.params.viewOption : 'dropdown';
         },
 
         data: function () {
             let data = Dep.prototype.data.call(this);
             data.optionData = this.extractOptionData(data);
+            data.viewOption = this.viewOption;
             return data;
         },
 
@@ -29,10 +28,16 @@ define('enum-extend-view:views/fields/enum-extend-view', ['views/fields/enum', '
         },
 
         focusOnInlineEdit: function () {
-            // Select.focus(this.$element);
+            if (this.viewOption == 'dropdown') {
+                Dep.prototype.focusOnInlineEdit.call(this);
+            }
         },
 
         fetch: function () {
+            if (this.viewOption == 'dropdown') {
+                return Dep.prototype.fetch.call(this);
+            }
+
             let value = this.$el.find('input[type="radio"]:checked').val();
 
             if (this.fetchEmptyValueAsNull && !value) {
@@ -47,9 +52,11 @@ define('enum-extend-view:views/fields/enum-extend-view', ['views/fields/enum', '
         },
 
         setOptionList: function (optionList) {
-            let currentValue = this.model.get(this.name);
-            if (!optionList.includes(currentValue)) {
-                optionList.unshift(currentValue);
+            if (this.viewOption !== 'dropdown') {
+                let currentValue = this.model.get(this.name);
+                if (!optionList.includes(currentValue)) {
+                    optionList.unshift(currentValue);
+                }
             }
             Dep.prototype.setOptionList.call(this, optionList);
         },
