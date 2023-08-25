@@ -52,6 +52,11 @@
         {
             "name": "readOnly",
             "type": "bool"
+        },
+        {
+            "name": "viewOption",
+            "type": "enum",
+            "options": ["dropdown", "radio", "kanban"]
         }
     ],
     "validationList": [

@@ -1,0 +1,83 @@
+.enum-kanban {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    .triangle-right {
+
+        --background-color: var(--text-muted-color);
+
+        &.label-success {
+            --background-color: var(--state-success-text);
+        }
+
+        &.label-danger {
+            --background-color: var(--state-danger-text);
+        }
+
+        &.label-warning {
+            --background-color: var(--state-warning-text);
+        }
+
+        &.label-info {
+            --background-color: var(--state-info-text);
+        }
+
+        &.label-primary {
+            --background-color: var(--state-primary-text);
+        }
+
+        background-color: var(--background-color);
+        position: relative;
+        height: 32px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        border-radius: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            margin: 0;
+            margin-right: 4px;
+        }
+
+        label {
+            margin: 0;
+
+        }
+
+        span {
+            color: white;
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 16px solid transparent;
+            border-left: 16px solid var(--background-color);
+            border-bottom: 16px solid transparent;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 16px solid var(--background-color);
+            border-left: 16px solid transparent;
+            border-bottom: 16px solid var(--background-color);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -16px;
+            transform: translateY(-50%);
+        }
+
+    }
+
+}

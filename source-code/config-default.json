@@ -7,7 +7,7 @@
         "host": "localhost",
         "port": null,
         "charset": "utf8mb4",
-        "dbname": "ext-vietnamese-translation",
+        "dbname": "ext-enum-extend-view",
         "user": "root",
         "password": ""
     },
